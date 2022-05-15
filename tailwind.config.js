@@ -1,5 +1,6 @@
 module.exports = {
-  content: ["./components/*.{jsx,js}", "./pages/*.{jsx,js}"],
+  mode: "jit",
+  content: ["./components/*.{jsx,js}", "./pages/**/*.{jsx,js}"],
   theme: {
     extend: {},
   },

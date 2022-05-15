@@ -1,16 +1,24 @@
+import Image from "next/image";
+
 function Navbar() {
   return (
-    <div>
-      <div className="flex flex-row justify-center space-x-24 p-5 ">
-        <h1
-          onClick={() => console.log("hello")}
-          className="my-text-color font-bold text-xl cursor-pointer transition duration-150 ease-out hover:animate-bounce"
-        >
-          Home
-        </h1>
-        <h1 className="my-text-color font-bold text-xl cursor-pointer transition duration-150 ease-out hover:animate-bounce">
-          About Us
-        </h1>
+    <div className="flex justify-around content-center bg-[#fff1dc] botder-b shadow-md ">
+      {/* Logo */}
+      <div className="relative h-16 w-24">
+        <Image
+          src="https://i.pinimg.com/originals/af/fb/c9/affbc96be98edecba473e0e630069b3b.png"
+          // width={60}
+          // height={60}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      {/* Menu */}
+      <div className="flex space-x-3  md:space-x-7 lg:space-x-20 items-center">
+        <h3 className="cursor-pointer ">HOME</h3>
+        <h3 className="cursor-pointer">PAGES</h3>
+        <h3 className="cursor-pointer">CHATBOT</h3>
+        <h3 className="cursor-pointer">CONTACT US</h3>
       </div>
     </div>
   );

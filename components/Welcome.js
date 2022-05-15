@@ -1,5 +1,7 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 function Welcome() {
+  const router = useRouter();
   return (
     <div className=" flex justify-between md:justify-evenly border-b-4">
       {/* Image */}
@@ -33,7 +35,11 @@ function Welcome() {
           Personalize your pet by providing suggestions and improve their
           overview health together{" "}
         </p>
-        <button className="text-white font-bold rounded-lg p-1 px-3 float-right mr-4 bg-yellow-500 hover:bg-yellow-300">
+        <button
+          type="button"
+          onClick={() => router.push("/login")}
+          className="text-white font-bold rounded-lg p-1 px-3 float-right mr-4 bg-yellow-500 hover:bg-yellow-300"
+        >
           Login
         </button>
       </div>

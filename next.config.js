@@ -10,6 +10,7 @@ const nextConfig = {
       "thumbs.dreamstime.com",
       "images8.alphacoders.com",
       "c.neh.tw",
+      "i.dlpng.com",
     ],
   },
 };

@@ -12,6 +12,6 @@
 
 @layer components {
     .my-text-color {
-        @apply text-[#6B7B79];
+        @apply text-[#fff1dc];
     }
 }

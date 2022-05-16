@@ -12,6 +12,7 @@ const nextConfig = {
       "c.neh.tw",
       "i.dlpng.com",
       "avatars.dicebear.com",
+      "i1.sndcdn.com",
     ],
   },
 };

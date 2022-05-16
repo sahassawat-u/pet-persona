@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useState } from "react";
 
 function Service() {
+  const [isOpenChat, setIsOpenChat] = useState(true);
   return (
     <div className="">
       <h1 className="text-center m-8 text-2xl">Our Services</h1>
@@ -30,6 +32,13 @@ function Service() {
           </h2>
         </div>
       </div>
+      {/* <div
+        className="
+      absolute  md:bottom-2 h-72 w-64 
+      md:right-20 bg-red-500 
+      lg:right-30 lg:bottom-4 rounded-lg"
+      >
+      </div> */}
     </div>
   );
 }

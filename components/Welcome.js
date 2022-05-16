@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 function Welcome() {
   const router = useRouter();
   return (
-    <div className=" flex justify-between md:justify-evenly border-b-4">
+    <div className=" flex relative justify-between md:justify-evenly border-b-4">
       {/* Image */}
       <div className=" flex">
-        <div className="relative hidden h-44 w-52 m-10 bg-transparent lg:inline-grid">
+        <div className="relative hidden h-44 w-52 m-10  lg:inline-grid">
           <Image
             layout="fill"
             src="https://c.neh.tw/thumb/f/720/5101027095216128.jpg"
@@ -38,7 +38,7 @@ function Welcome() {
         <button
           type="button"
           onClick={() => router.push("/login")}
-          className="text-white font-bold rounded-lg p-1 px-3 float-right mr-4 bg-yellow-500 hover:bg-yellow-300"
+          className="text-white font-bold rounded-lg p-1 px-3 float-right mr-4 bg-sky-300 hover:bg-sky-200"
         >
           Login
         </button>

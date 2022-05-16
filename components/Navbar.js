@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const router = useRouter();
   return (
     <div className="flex justify-around content-center bg-[rgba(255,241,220,255)] botder-b shadow-md ">
       {/* Logo */}
@@ -18,7 +20,12 @@ function Navbar() {
       <div className="flex space-x-3  md:space-x-7 lg:space-x-20 items-center">
         <h3 className="cursor-pointer hover:scale-110 text-sm">HOME</h3>
         <h3 className="cursor-pointer hover:scale-110 text-sm">PAGES</h3>
-        <h3 className="cursor-pointer hover:scale-110 text-sm">CHATBOT</h3>
+        <h3
+          onClick={() => router.push("/chatbox")}
+          className="cursor-pointer hover:scale-110 text-sm"
+        >
+          CHATBOT
+        </h3>
         <h3 className="cursor-pointer hover:scale-110 text-sm">CONTACT US</h3>
       </div>
     </div>

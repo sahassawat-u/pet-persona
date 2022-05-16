@@ -11,6 +11,7 @@ const nextConfig = {
       "images8.alphacoders.com",
       "c.neh.tw",
       "i.dlpng.com",
+      "avatars.dicebear.com",
     ],
   },
 };

@@ -10,7 +10,7 @@ import {
 
 function Contact() {
   return (
-    <div className="  bg-yellow-500 flex justify-between px-3 md:px-32 py-1">
+    <div className="  bg-sky-300 flex justify-between px-3 md:px-32 py-1">
       {/* Left items */}
       <div className="flex space-x-2 items-center">
         <div className="flex space-x-1  cursor-pointer">
